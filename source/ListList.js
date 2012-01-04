@@ -2,8 +2,7 @@ enyo.kind({
 	name: "ListList",
 	kind: "VFlexBox",
 	components: [
-		{kind: "Header",content:"Lists"}
-		]},
+		{kind: "Header",content:"Lists"},
 		{kind: "VirtualList",flex:1,onSetupRow:"setupRow", components:[
 			{kind:"Item",layoutKind:"HFlexLayout",components:[
 				{type:"Image", name:"image"},
