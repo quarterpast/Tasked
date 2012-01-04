@@ -3,8 +3,8 @@ enyo.kind({
 	kind: "VFlexBox",
 	components: [
 		{kind: "Header",components:[
-			{content:"Lists"},
-			{kind:"RoundedSearchInput"}
+			{content:"Lists",flex:1},
+			{kind:"RoundedSearchInput",style: "width:160px"}
 		]},
 		{kind: "VirtualList",flex:1,onSetupRow:"setupRow", components:[
 			{kind:"Item",layoutKind:"HFlexLayout",components:[

@@ -14,8 +14,8 @@ enyo.kind({
 		},
 		{kind: "VirtualList",flex:1,onSetupRow:"setupRow", components:[
 			{kind:"Item",layoutKind:"HFlexLayout",components:[
-				{kind:"CheckBox"},
-				{name:"caption",flex:1}
+				{name:"caption",flex:1},
+				{kind: "CheckBox"}
 			]}
 		]},
 		{kind: "Toolbar", components:[
