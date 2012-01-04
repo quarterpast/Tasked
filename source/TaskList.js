@@ -2,7 +2,10 @@ enyo.kind({
 	name: "TaskList",
 	kind: "VFlexBox",
 	components: [
-		{name: "header", kind: "Header", content: "All tasks"},
+		{name: "header", kind: "Header", components:[
+			{content:"All tasks",flex:1,name:"headerLabel"},
+			{kind:"RoundedSearchInput",style: "width:160px", onfocus:"searchFocus", onblur:"searchBlur"}
+		]},
 		{
 			style: "-webkit-border-image: none; background: white;",
 			className:"enyo-box-input",
@@ -49,5 +52,11 @@ enyo.kind({
 	},
 	focusNewTask: function() {
 		this.$.newTask.forceFocus();
+	},
+	searchFocus: function() {
+		this.$.headerLabel.hide();
+	},
+	searchBlur: function() {
+		this.$.headerLabel.show();
 	}
 });
