@@ -3,8 +3,8 @@ enyo.kind({
 	kind: "VFlexBox",
 	components: [
 		{kind: "Header",components:[
-			{content:"Lists",flex:1},
-			{kind:"RoundedSearchInput",style: "width:160px"}
+			{content:"Lists",flex:1,name:"headerLabel"},
+			{kind:"RoundedSearchInput",style: "width:160px", onfocus:"searchFocus", onblur:"searchBlur"}
 		]},
 		{kind: "VirtualList",flex:1,onSetupRow:"setupRow", components:[
 			{kind:"Item",layoutKind:"HFlexLayout",components:[
@@ -31,5 +31,12 @@ enyo.kind({
 			this.$.caption.setContent(row);
 			return true;
 		}
+	},
+	searchFocus: function() {
+		this.$.headerLabel.hide();
+		this.$.roundedSearchInput.forceFocus();
+	},
+	searchBlur: function() {
+		this.$.headerLabel.show();
 	}
 });
