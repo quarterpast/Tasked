@@ -10,8 +10,8 @@ enyo.kind({
 			]}
 		]},
 		{kind: "Toolbar", components:[
-			{flex:1},
-			{icon:"images/Light/list-add.png"}
+			{icon:"images/Light/list-add.png"},
+			{icon:"images/Light/view-refresh.png"}
 		]}
 	],
 	data: [

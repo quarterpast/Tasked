@@ -4,7 +4,7 @@ enyo.kind({
 	components: [
 		{
 			style: "background: white; height: 56px; font-size: 1.2rem",
-			className:"enyo-box-input",
+			className:"enyo-box-input header-input",
 			alwaysLooksFocused: true,
 			kind:"Input",
 			value:"Task",
@@ -13,7 +13,6 @@ enyo.kind({
 		{kind: "Scroller",flex:1},
 		{kind: "Toolbar", components:[
 			{kind:"GrabButton"},
-			{flex:1},
 			{icon:"images/Light/dialog-ok.png"},
 			{icon:"images/Light/tag-new.png"},
 			{icon:"images/Light/haguichi-connected.png"},

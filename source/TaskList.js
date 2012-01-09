@@ -4,7 +4,7 @@ enyo.kind({
 	components: [
 		{name: "header", kind: "Header", components:[
 			{content:"All tasks",flex:1,name:"headerLabel"},
-			{kind:"RoundedSearchInput",style: "width:160px", onfocus:"searchFocus", onblur:"searchBlur",name:"search"}
+			{kind:"RoundedSearchInput",className:"widen", onfocus:"searchFocus", onblur:"searchBlur",name:"search"}
 		]},
 		{
 			style: "-webkit-border-image: none; background: white;",
@@ -23,11 +23,10 @@ enyo.kind({
 		]},
 		{kind: "Toolbar", components:[
 			{kind:"GrabButton"},
-			{flex:1},
 			{kind:"ToolButton",icon:"images/Light/list-add.png",onclick:"focusNewTask"},
 			{kind:"ToolButton",icon:"images/Light/view-sort-ascending.png", onclick: "showSortMenu", name: "sortButton"}
 		]},
-		{name:"sortMenu", kind:"Menu",showing:false,components:[
+		{name:"sortMenu", kind:"Menu",className:'enyo-icon-menu',showing:false,components:[
 			{content:"Alphabetical",style:"padding:0px 5px", icon: "images/Dark/goldendict-panel.png"},
 			{content:"Date",style:"padding:0px 5px", icon: "images/Dark/appointment-soon.png"},
 			{content:"Priority",style:"padding:0px 5px", icon: "images/Dark/software-update-available.png"}
@@ -55,11 +54,9 @@ enyo.kind({
 	},
 	searchFocus: function() {
 		this.$.headerLabel.hide();
-		this.$.search.style = "width:300px";
-		console.log(this.$.search.style)
+		console.log(this.$.search);
 	},
 	searchBlur: function() {
 		this.$.headerLabel.show();
-		this.$.search.style = "width:160px";
 	}
 });
