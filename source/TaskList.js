@@ -4,7 +4,7 @@ enyo.kind({
 	components: [
 		{name: "header", kind: "Header", components:[
 			{content:"All tasks",flex:1,name:"headerLabel"},
-			{kind:"RoundedSearchInput",style: "width:160px", onfocus:"searchFocus", onblur:"searchBlur"}
+			{kind:"RoundedSearchInput",style: "width:160px", onfocus:"searchFocus", onblur:"searchBlur",name:"search"}
 		]},
 		{
 			style: "-webkit-border-image: none; background: white;",
@@ -55,8 +55,11 @@ enyo.kind({
 	},
 	searchFocus: function() {
 		this.$.headerLabel.hide();
+		this.$.search.style = "width:300px";
+		console.log(this.$.search.style)
 	},
 	searchBlur: function() {
 		this.$.headerLabel.show();
+		this.$.search.style = "width:160px";
 	}
 });
