@@ -24,12 +24,15 @@ enyo.kind({
 		{kind: "Toolbar", components:[
 			{kind:"GrabButton"},
 			{kind:"ToolButton",icon:"images/Light/list-add.png",onclick:"focusNewTask"},
-			{kind:"ToolButton",icon:"images/Light/view-sort-ascending.png", onclick: "showSortMenu", name: "sortButton"}
+			{kind:"RadioToolButtonGroup",components:[
+				{kind:"Component",content:"Sort..."},
+				{icon: "images/Dark/goldendict-panel.png"},
+				{icon: "images/Dark/appointment-soon.png"},
+				{icon: "images/Dark/importance-low.png"}
+			]}
 		]},
 		{name:"sortMenu", kind:"Menu",className:'enyo-icon-menu',showing:false,components:[
-			{content:"Alphabetical",style:"padding:0px 5px", icon: "images/Dark/goldendict-panel.png"},
-			{content:"Date",style:"padding:0px 5px", icon: "images/Dark/appointment-soon.png"},
-			{content:"Priority",style:"padding:0px 5px", icon: "images/Dark/software-update-available.png"}
+			
 		]}
 	],
 	data: [

@@ -16,15 +16,15 @@ enyo.kind({
 			{icon:"images/Light/dialog-ok.png"},
 			{icon:"images/Light/tag-new.png"},
 			{icon:"images/Light/haguichi-connected.png"},
-			{name:"important",icon:"images/Light/software-update-available.png",onclick:"toggleImportant"},
+			{name:"important",icon:"images/Light/importance-low.png",onclick:"toggleImportant"},
 			{icon:"images/Light/list-remove.png"}
 		]}
 	],
 	toggleImportant: function() {
-		if(this.$.important.getIcon() == "images/Light/software-update-available.png") {
-			this.$.important.setIcon("images/Light/software-update-urgent.png");
+		if(this.$.important.getIcon() == "images/Light/importance-low.png") {
+			this.$.important.setIcon("images/Light/importance-high.png");
 		} else {
-			this.$.important.setIcon("images/Light/software-update-available.png");
+			this.$.important.setIcon("images/Light/importance-low.png");
 		}
 	}
 });
