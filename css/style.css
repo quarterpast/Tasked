@@ -2,10 +2,10 @@
 	font-size: 1rem;
 	margin: 0px;
 }
-.widen {
+#tasks_tasks_search {
 	width: 160px;
 }
-.widen input:focus {
+#tasks_tasks_search.wide {
 	width: 300px;
 }
 .enyo-header-inner {
