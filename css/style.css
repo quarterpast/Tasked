@@ -14,3 +14,24 @@
 .enyo-icon-menu .enyo-item {
 	padding: 0px 10px 0px 0px;
 }
+.sort-importance {
+	background-image: url(../images/Dark/importance-low.png);
+	background-repeat: no-repeat;
+}
+.enyo-button-depressed .sort-importance {
+	background-image: url(../images/Light/importance-low.png);
+}
+.sort-alphabetical {
+	background-image: url(../images/Dark/sort-alphabetical.png);
+	background-repeat: no-repeat;
+}
+.enyo-button-depressed .sort-alphabetical {
+	background-image: url(../images/Light/sort-alphabetical.png);
+}
+.sort-time {
+	background-image: url(../images/Dark/appointment-soon.png);
+	background-repeat: no-repeat;
+}
+.enyo-button-depressed .sort-time {
+	background-image: url(../images/Light/appointment-soon.png);
+}

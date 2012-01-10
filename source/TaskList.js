@@ -25,10 +25,9 @@ enyo.kind({
 			{kind:"GrabButton"},
 			{kind:"ToolButton",icon:"images/Light/list-add.png",onclick:"focusNewTask"},
 			{kind:"RadioToolButtonGroup",components:[
-				{kind:"Component",content:"Sort..."},
-				{icon: "images/Dark/goldendict-panel.png"},
-				{icon: "images/Dark/appointment-soon.png"},
-				{icon: "images/Dark/importance-low.png"}
+				{icon: "sort-alphabetical", iconIsClassName: true},
+				{icon: "sort-time", iconIsClassName: true},
+				{icon: "sort-importance", iconIsClassName: true}
 			]}
 		]},
 		{name:"sortMenu", kind:"Menu",className:'enyo-icon-menu',showing:false,components:[
