@@ -8,6 +8,9 @@
 #tasks_tasks_search.wide {
 	width: 300px;
 }
+#tasks_view {
+	min-width: 400px;
+}
 .enyo-header-inner {
 	padding: 0px 12px;
 }
