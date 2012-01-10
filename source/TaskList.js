@@ -25,8 +25,8 @@ enyo.kind({
 			{kind:"GrabButton"},
 			{kind:"ToolButton",icon:"images/Light/list-add.png",onclick:"focusNewTask"},
 			{kind:"RadioToolButtonGroup",components:[
-				{icon: "sort-alphabetical", iconIsClassName: true},
 				{icon: "sort-time", iconIsClassName: true},
+				{icon: "sort-alphabetical", iconIsClassName: true},
 				{icon: "sort-importance", iconIsClassName: true}
 			]}
 		]},
