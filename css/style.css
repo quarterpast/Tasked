@@ -49,6 +49,9 @@
 	border-bottom-style: none;
 	text-align: center;
 }
+.calendar .enyo-header {
+	margin-top: -2px;
+}
 .calendar .enyo-tool-button, .calendar .enyo-header-inner {
 	padding: 0px;
 }
