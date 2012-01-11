@@ -19,14 +19,68 @@ enyo.kind({
 			]}
 		]},
 		{kind:"DividerDrawer",caption:"Date & Time",components:[
-			{kind: "VFlexBox",className: "calendar",components:[
+			{kind: "VFlexBox",style:"text-align:center;",className: "calendar",components:[
 				{kind:"Header",className:"enyo-toolbar-light",components:[
 					{kind:"ToolButton",icon:"images/Dark/go-first.png"},
 					{kind:"ToolButton",icon:"images/Dark/go-previous.png"},
-					{content:"September 2012",style:"text-align:center;line-height: 8px;",flex:1},
+					{content:"January 2012",style:"line-height: 8px;",flex:1},
 					{kind:"ToolButton",icon:"images/Dark/go-next.png"},
 					{kind:"ToolButton",icon:"images/Dark/go-last.png"}
-				]}
+				]},
+				{kind:"HFlexBox",components:[
+					{flex: 1, content: 26},
+					{flex: 1, content: 27},
+					{flex: 1, content: 28},
+					{flex: 1, content: 29},
+					{flex: 1, content: 30},
+					{flex: 1, content: 31},
+					{flex: 1, content: 1}
+				]},
+				{kind:"HFlexBox",components:[
+					{flex: 1, content: 2},
+					{flex: 1, content: 3},
+					{flex: 1, content: 4},
+					{flex: 1, content: 5},
+					{flex: 1, content: 6},
+					{flex: 1, content: 7},
+					{flex: 1, content: 8}
+				]},
+				{kind:"HFlexBox",components:[
+					{flex: 1, content: 9},
+					{flex: 1, content: 10},
+					{flex: 1, content: 11},
+					{flex: 1, content: 12},
+					{flex: 1, content: 13},
+					{flex: 1, content: 14},
+					{flex: 1, content: 15}
+				]},
+				{kind:"HFlexBox",components:[
+					{flex: 1, content: 16},
+					{flex: 1, content: 17},
+					{flex: 1, content: 18},
+					{flex: 1, content: 19},
+					{flex: 1, content: 20},
+					{flex: 1, content: 21},
+					{flex: 1, content: 22}
+				]},
+				{kind:"HFlexBox",components:[
+					{flex: 1, content: 23},
+					{flex: 1, content: 24},
+					{flex: 1, content: 25},
+					{flex: 1, content: 26},
+					{flex: 1, content: 27},
+					{flex: 1, content: 28},
+					{flex: 1, content: 29}
+				]},
+				{kind:"HFlexBox",components:[
+					{flex: 1, content: 30},
+					{flex: 1, content: 31},
+					{flex: 1, content: 1},
+					{flex: 1, content: 2},
+					{flex: 1, content: 3},
+					{flex: 1, content: 4},
+					{flex: 1, content: 5}
+				]},
 			]}
 		]},
 		{kind:"DividerDrawer",caption:"Reminders",components:[
