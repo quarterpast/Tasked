@@ -11,6 +11,9 @@
 #tasks_view {
 	min-width: 384px;
 }
+#tasks_tasks_newTask {
+	border-width: 8px 14px;
+}
 .calendar {
 	width: 320px;
 	margin: 0px 30px;

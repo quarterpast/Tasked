@@ -8,4 +8,4 @@ install: package
 launch: install
 	palm-launch -d $(DEVICE) uk.co.north52.tasks
 run:
-	palm-run . -d $(DEVICE)
+	palm-run . -d $(DEVICE) &
