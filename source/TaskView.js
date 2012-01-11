@@ -159,6 +159,10 @@ enyo.kind({
 					{caption:"7",value:"7"},
 					{caption:"8",value:"8"},
 					{caption:"9",value:"9"},
+					]},
+				{kind:"CustomListSelector",className:"am",value:"AM",items:[
+					{caption:"AM",value:0},
+					{caption:"PM",value:12},
 				]}
 
 			]}

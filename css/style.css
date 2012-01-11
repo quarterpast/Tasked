@@ -27,6 +27,11 @@
 	font-size: 4em;
 	line-height: 1em;
 }
+.clock .am .enyo-listselector-item {
+	font-size: 2em;
+	line-height: 2em;
+	font-weight: bold;
+}
 .clock .enyo-listselector-arrow {
 	position: relative;
 	top: 28px;
