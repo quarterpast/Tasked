@@ -19,11 +19,11 @@ enyo.kind({
 			]}
 		]},
 		{kind:"DividerDrawer",caption:"Date & Time",components:[
-			{kind: "VFlexBox",style:"text-align:center;",className: "calendar",components:[
+			{kind: "VFlexBox",className: "calendar",components:[
 				{kind:"Header",className:"enyo-toolbar-light",components:[
 					{kind:"ToolButton",icon:"images/Dark/go-first.png"},
 					{kind:"ToolButton",icon:"images/Dark/go-previous.png"},
-					{content:"January 2012",style:"line-height: 8px;",flex:1},
+					{content:"January 2012",flex:1},
 					{kind:"ToolButton",icon:"images/Dark/go-next.png"},
 					{kind:"ToolButton",icon:"images/Dark/go-last.png"}
 				]},

@@ -16,6 +16,7 @@
 	margin: 0px 30px;
 	border: 1px solid #999;
 	border-top-style: none;
+	text-align: center;
 }
 .calendar .enyo-tool-button, .calendar .enyo-header-inner {
 	padding: 0px;
@@ -23,6 +24,7 @@
 .calendar .enyo-header, .calendar .enyo-header-inner {
 	min-height: 0px;
 	height: 36px;
+	line-height: 8px;
 }
 .enyo-header-inner {
 	padding: 0px 12px;
