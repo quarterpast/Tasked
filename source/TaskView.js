@@ -13,8 +13,7 @@ enyo.kind({
 		{kind:"Scroller", flex:1,components:[
 		{kind:"DividerDrawer",caption:"Notes",components:[
 			{kind: "VirtualRepeater",onSetupRow:"setupRow", components:[
-				{kind:"Item",layoutKind:"HFlexLayout",components:[
-					{type:"Image", name:"image"},
+				{kind:"SwipeableItem",layoutKind:"HFlexLayout",onConfirm:"deleteNote",components:[
 					{name:"caption"}
 				]}
 			]}
@@ -50,7 +49,7 @@ enyo.kind({
 			this.$.important.setIcon("images/Light/importance-low.png");
 		}
 	},
-	data: [
+	notes: [
 		"Lorem",
 		"Ipsum",
 		"Dolor",
@@ -58,11 +57,13 @@ enyo.kind({
 		"Amet"
 	],
 	setupRow: function(inSender, inIndex) {
-		var row = this.data[inIndex];
+		var row = this.notes[inIndex];
 		if (row) {
-			this.$.image.src = "images/Dark/view-list-compact-symbolic.png";
 			this.$.caption.setContent(row);
 			return true;
 		}
+	},
+	deleteItem: function(inSender, inIndex) {
+		this.notes.splice(inIndex, 1);
 	}
 });
