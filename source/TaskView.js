@@ -10,24 +10,29 @@ enyo.kind({
 			value:"Task",
 			changeOnInput: true
 		},
-		{kind:"DividerDrawer",flex:1,caption:"Notes",components:[
-			{kind: "VirtualRepeater",flex:1,onSetupRow:"setupRow", components:[
+		{kind:"Scroller", flex:1,components:[
+		{kind:"DividerDrawer",caption:"Notes",components:[
+			{kind: "VirtualRepeater",onSetupRow:"setupRow", components:[
 				{kind:"Item",layoutKind:"HFlexLayout",components:[
 					{type:"Image", name:"image"},
 					{name:"caption"}
 				]}
 			]}
 		]},
-		{kind:"DividerDrawer",flex:1,caption:"Date & Time",components:[
-			{kind: "VFlexBox",flex:1,components:[
+		{kind:"DividerDrawer",caption:"Date & Time",components:[
+			{kind: "VFlexBox",className: "calendar",components:[
 				{kind:"Header",className:"enyo-toolbar-light",components:[
 					{kind:"ToolButton",icon:"images/Dark/go-first.png"},
 					{kind:"ToolButton",icon:"images/Dark/go-previous.png"},
-					{content:"January 2012",style:"text-align:center;",flex:1},
+					{content:"September 2012",style:"text-align:center;line-height: 8px;",flex:1},
 					{kind:"ToolButton",icon:"images/Dark/go-next.png"},
 					{kind:"ToolButton",icon:"images/Dark/go-last.png"}
 				]}
 			]}
+		]},
+		{kind:"DividerDrawer",caption:"Reminders",components:[
+			
+		]},
 		]},
 		{kind: "Toolbar", components:[
 			{kind:"GrabButton"},
