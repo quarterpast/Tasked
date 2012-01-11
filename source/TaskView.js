@@ -172,7 +172,7 @@ enyo.kind({
 		]},
 		]},
 		{kind: "Toolbar", components:[
-			{kind:"GrabButton", name:"grab"},
+			{kind:"GrabButton", name:"grab",onclick:""},
 			{icon:"images/Light/dialog-ok.png"},
 			{icon:"images/Light/tag-new.png"},
 			{icon:"images/Light/haguichi-connected.png"},
