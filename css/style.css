@@ -11,6 +11,12 @@
 #tasks_view {
 	min-width: 384px;
 }
+.calendar {
+	width:320px;
+}
+.calendar .enyo-tool-button, .calendar .enyo-header-inner {
+	padding: 0px;
+}
 .enyo-header-inner {
 	padding: 0px 12px;
 }
