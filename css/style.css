@@ -13,9 +13,15 @@
 }
 .calendar {
 	width:320px;
+	margin: 0px 30px;
+	border: 1px solid #999;
+	border-top-style: none;
 }
 .calendar .enyo-tool-button, .calendar .enyo-header-inner {
 	padding: 0px;
+}
+.calendar .enyo-header, .calendar .enyo-header-inner {
+	min-height: 32px;
 }
 .enyo-header-inner {
 	padding: 0px 12px;
