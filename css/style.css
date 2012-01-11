@@ -16,7 +16,7 @@
 }
 .calendar {
 	width: 320px;
-	margin: 0px 30px;
+	margin: 0px auto;
 	border: 1px solid #999;
 	border-top-style: none;
 	border-bottom-style: none;
