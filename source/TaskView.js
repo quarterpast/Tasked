@@ -168,7 +168,16 @@ enyo.kind({
 			]}
 		]},
 		{kind:"DividerDrawer",caption:"Reminders",components:[
-			
+			{kind: "VirtualRepeater",onSetupRow:"setupReminder", components:[
+				{kind:"Item",layoutKind:"HFlexLayout",components:[
+					{kind:"ToggleButton"},
+					{kind:"Input",name:"time"},
+					{kind:"ListSelector",name:"unit",value:"minutes",items:[
+						{caption:"minutes",value:1},
+						{caption:"hours",value:60}
+					]}
+				]}
+			]}
 		]},
 		]},
 		{kind: "Toolbar", components:[
@@ -197,6 +206,19 @@ enyo.kind({
 		var row = this.notes[inIndex];
 		if (row) {
 			this.$.caption.setContent(row);
+			return true;
+		}
+	},
+	reminders: [
+		[15,"minutes"],
+		[1,"hours"],
+	],
+	setupReminder: function(inSender, inIndex) {
+		console.log(inIndex)
+		var row = this.reminders[inIndex];
+		if (row) {
+			this.$.time.setValue(row[0]);
+			this.$.unit.setValue(row[1]);
 			return true;
 		}
 	},
