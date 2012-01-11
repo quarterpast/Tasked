@@ -172,7 +172,7 @@ enyo.kind({
 		]},
 		]},
 		{kind: "Toolbar", components:[
-			{kind:"GrabButton"},
+			{kind:"GrabButton", name:"grab"},
 			{icon:"images/Light/dialog-ok.png"},
 			{icon:"images/Light/tag-new.png"},
 			{icon:"images/Light/haguichi-connected.png"},
@@ -203,5 +203,11 @@ enyo.kind({
 	},
 	deleteItem: function(inSender, inIndex) {
 		this.notes.splice(inIndex, 1);
+	},
+	hideGrab: function() {
+		this.$.grab.hide();
+	},
+	showGrab: function() {
+		this.$.grab.show();
 	}
 });
