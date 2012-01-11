@@ -20,10 +20,10 @@ enyo.kind({
 		]},
 		{kind:"DividerDrawer",flex:1,caption:"Date & Time",components:[
 			{kind: "VFlexBox",flex:1,components:[
-				{kind:"Toolbar",className:"enyo-toolbar-light",components:[
+				{kind:"Header",className:"enyo-toolbar-light",components:[
 					{kind:"ToolButton",icon:"images/Dark/go-first.png"},
 					{kind:"ToolButton",icon:"images/Dark/go-previous.png"},
-					{content:"January 2012",flex:1},
+					{content:"January 2012",style:"text-align:center;",flex:1},
 					{kind:"ToolButton",icon:"images/Dark/go-next.png"},
 					{kind:"ToolButton",icon:"images/Dark/go-last.png"}
 				]}
