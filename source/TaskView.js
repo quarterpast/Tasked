@@ -196,7 +196,7 @@ enyo.kind({
 		}
 	},
 	notes: [
-		"Lorem",
+		"Lorem, this line is far too long to actually, physically fit in the list item.",
 		"Ipsum",
 		"Dolor",
 		"Sit",
