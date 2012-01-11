@@ -12,7 +12,7 @@
 	min-width: 384px;
 }
 .calendar {
-	width:320px;
+	width: 320px;
 	margin: 0px 30px;
 	border: 1px solid #999;
 	border-top-style: none;
@@ -21,7 +21,8 @@
 	padding: 0px;
 }
 .calendar .enyo-header, .calendar .enyo-header-inner {
-	min-height: 32px;
+	min-height: 0px;
+	height: 36px;
 }
 .enyo-header-inner {
 	padding: 0px 12px;
