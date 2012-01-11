@@ -14,9 +14,31 @@
 #tasks_tasks_newTask {
 	border-width: 8px 14px;
 }
+.clock {
+	display:inline-block;
+}
+.clock .enyo-listselector {
+	margin-right: -16px;
+}
+.clock .enyo-listselector, .clock .colon {
+	float:left;
+}
+.clock .colon,.clock .enyo-listselector-item {
+	font-size: 4em;
+	line-height: 1em;
+}
+.clock .enyo-listselector-arrow {
+	position: relative;
+	top: 28px;
+	left: -16px;
+}
+.calendarDrawer .enyo-drawer {
+	padding-left: 30px;
+}
 .calendar {
+	display: inline-block;
 	width: 320px;
-	margin: 0px auto;
+	margin-right: 20px;
 	border: 1px solid #999;
 	border-top-style: none;
 	border-bottom-style: none;
