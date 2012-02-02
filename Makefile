@@ -9,3 +9,5 @@ launch: install
 	palm-launch -d $(DEVICE) uk.co.north52.tasks
 run:
 	palm-run . -d $(DEVICE) &
+chrome:
+	google-chrome --allow-file-access-from-files --disable-web-security --enable-file-cookies index.html &
