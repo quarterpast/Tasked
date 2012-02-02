@@ -4,5 +4,7 @@ enyo.depends(
 	"source/TaskList.js",
 	"source/ListList.js",
 	"source/TaskView.js",
+	"source/widgets/Calendar.js",
+	"source/widgets/Clock.js",
 	"css/style.css"
 );
